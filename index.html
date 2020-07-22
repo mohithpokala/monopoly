@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+    	@media only screen and (max-width:800px){
+        .row2 >div{
+        	height:14%;width:21%;
+            background-color:pink;border:2px solid black;border-radius:9px;
+        }
+        
+        .row2 >div:nth-child(even) .header{transform:rotate(180deg)}
+        .row2 >div:nth-child(even) .footer{transform:rotate(180deg)}
+        .row2{display:flex;flex-direction:row;justify-content:space-between;clear:left;}
+        .row2 [class*=object-] .header{height:80%;width:100%;font-size:15px; }
+        .row2 [class*=object-] .footer{height:20%;width:100%;font-size:15px; }
+        .mydiv{height:301px;}
+        
+        .row3 >div{
+        	height:40px;width:21%;
+            background-color:white;border:2px solid black;border-radius:9px;
+        }
+        
+        .row3 >div:nth-child(even) .header{transform:rotate(180deg)}
+        .row3 >div:nth-child(even) .footer{transform:rotate(180deg)}
+        .row3{display:flex;flex-direction:row;justify-content:space-between;clear:left;}
+        .row3 [class*=object-] .header{height:25px;width:100%;font-size:15px; }
+        .row3 [class*=object-] .footer{height:15px;width:100%;font-size:15px; }
+        
+        .row4 >div{
+        	height:40px;width:21%;
+            background-color:white;border:2px solid black;border-radius:9px;
+        }
+        
+        .row4 >div:nth-child(even) .header{transform:rotate(180deg)}
+        .row4 >div:nth-child(even) .footer{transform:rotate(180deg)}
+        .row4{display:flex;flex-direction:row;justify-content:space-between;clear:left;}
+        .row4 [class*=object-] .header{height:25px;width:100%;font-size:15px; }
+        .row4 [class*=object-] .footer{height:15px;width:100%;font-size:15px; }
+        
+      .row5 >div{
+        	height:40px;width:21%;
+            background-color:white;border:2px solid black;border-radius:9px;
+        }
+        
+        .row5 >div:nth-child(even) .header{transform:rotate(180deg)}
+        .row5 >div:nth-child(even) .footer{transform:rotate(180deg)}
+        .row5{display:flex;flex-direction:row;justify-content:space-between;clear:left;}
+        .row5 [class*=object-] .header{height:25px;width:100%;font-size:15px; }
+        .row5 [class*=object-] .footer{height:15px;width:100%;font-size:15px; }
+        
+      .row6 >div{
+        	height:40px;width:21%;
+            background-color:white;border:2px solid black;border-radius:9px;
+        }
+        
+        .row6 >div:nth-child(even) .header{transform:rotate(180deg)}
+        .row6 >div:nth-child(even) .footer{transform:rotate(180deg)}
+        .row6{display:flex;flex-direction:row;justify-content:space-between;clear:left;}
+        .row6 [class*=object-] .header{height:25px;width:100%;font-size:15px; }
+        .row6 [class*=object-] .footer{height:15px;width:100%;font-size:15px; }
+        
+      .row7 >div{
+        	height:40px;width:21%;
+            background-color:white;border:2px solid black;border-radius:9px;
+        }
+        
+        .row7 >div:nth-child(even) .header{transform:rotate(180deg)}
+        .row7 >div:nth-child(even) .footer{transform:rotate(180deg)}
+        .row7{display:flex;flex-direction:row;justify-content:space-between;clear:left;}
+        .row7 [class*=object-] .header{height:25px;width:100%;font-size:15px; }
+        .row7 [class*=object-] .footer{height:15px;width:100%;font-size:15px; }
+        
+      .row8 >div{
+        	height:40px;width:21%;
+            background-color:white;border:2px solid black;border-radius:9px;
+        }
+        
+        .row8 >div:nth-child(even) .header{transform:rotate(180deg)}
+        .row8 >div:nth-child(even) .footer{transform:rotate(180deg)}
+        .row8{display:flex;flex-direction:row;justify-content:space-between;clear:left;}
+        .row8 [class*=object-] .header{height:25px;width:100%;font-size:15px; }
+        .row8 [class*=object-] .footer{height:15px;width:100%;font-size:15px; }
+        
+      
+        
+      
+        
+       	
+        
+
+        .fourcorners{height:96px;border:2px solid black;border-radius:9px;width:22%;
+        background-color:pink;padding:0px 0px;text-align:center;}
+                [class*=object-] >div{float:left;}
+
+        .row1 [class*=object-] .header{height:96px;width:70%;font-size:15px; writing-mode: vertical-rl;}
+        .row1 [class*=object-] .footer{height:96px;width:30%;font-size:15px; writing-mode: vertical-rl;}
+        .row1{display:flex;flex-direction:row;justify-content:space-between;}
+        .row1 [class*=object-]{
+        	height:96px;width:8%;
+            background-color:white;border:2px solid black;border-radius:9px;
+        }
+        .row9 [class*=object-] .header{height:96px;width:70%;font-size:15px; writing-mode: vertical-rl;}
+        .row9 [class*=object-] .footer{height:96px;width:30%;font-size:15px; writing-mode: vertical-rl;}
+        .row9{display:flex;flex-direction:row;justify-content:space-between;}
+        .row9 [class*=object-]{
+        	height:96px;width:8%;
+            background-color:white;border:2px solid black;border-radius:9px;transform:rotate(180deg)
+        }
+        
+        .object-red .header{background-color:red;text-align:center}
+        .object-red .footer{background-color:red;text-align:center}
+        .object-blue .header{background-color:blue;text-align:center}
+        .object-blue .footer{background-color:blue;text-align:center}
+        .object-green .header{background-color:green;text-align:center}
+        .object-yellow .footer{background-color:yellow;text-align:center}
+        .object-yellow .header{background-color:yellow;text-align:center}
+        .object-green .footer{background-color:green;text-align:center}
+        .object-orange .header{background-color:orange;text-align:center}
+        .object-orange .footer{background-color:orange;text-align:center}
+        .object-brown .header{background-color:brown;text-align:center}
+        .object-brown .footer{background-color:brown;text-align:center}}
+    </style>
+</head>
+<body>
+	<div class="row1">
+    	<div class="fourcorners">
+    			JAIL
+    	</div>
+		<div class="object-red", id="hyderabad">
+        	<div class="footer">6000</div>
+        	
+            <div class="header">Hyderabad</div>
+        	
+     	</div>   
+     	<div class="object-yellow", id="bangalore">
+        	<div class="footer">6500</div>
+	    	
+        	<div class="header">Bangalore</div>
+     	</div>
+        <div class="object-brown", id="Chance">
+    		<div class="footer">3000</div>
+        	
+        	<div class="header">Chance</div>
+     	</div>
+     	<div class="object-blue", id="jaipur">
+	    	<div class="footer">3500</div>
+	        
+            <div class="header">Jaipur</div>
+	        
+	     </div>
+		 <div class="object-orange", id="vizag">
+    		<div class="footer">5000</div>
+        	
+            <div class="header">Vizag</div>
+        	
+     	</div>
+     	<div class="object-green", id="ahmedabad">
+	    	<div class="footer">4500</div>
+	        
+            <div class="header">Ahmedabad</div>
+     	</div>
+     	<div class="object-brown", id="Airways">
+    		<div class="footer">10000</div>
+        	
+        	<div class="header">Airways</div>
+     	</div>
+        
+        
+     	<div class="fourcorners">
+    		JAIL
+    	</div>
+     </div>
+     <div class="mydiv">
+    <div class="row2">
+    	<div class="object-red", id="shillong">
+        	<div class="footer">3000</div>
+        	
+            <div class="header">Shillong</div>
+        	
+     	</div>   
+     	<div class="object-yellow", id="ranchi">
+        	<div class="footer">3000</div>
+	    	
+        	<div class="header">Ranchi</div>
+     	</div>
+    </div>
+    <div class="row3">
+    	<div class="object-green", id="Srinagar">
+        	<div class="footer">3500</div>
+        	
+            <div class="header">Srinagar</div>
+        	
+     	</div>   
+     	<div class="object-blue", id="Pune">
+        	<div class="footer">5500</div>
+	    	
+        	<div class="header">Pune</div>
+     	</div>
+    </div>
+    <div class="row4">
+    	<div class="object-brown", id="roadways">
+        	<div class="footer">4500</div>
+        	
+            <div class="header">Roadways</div>
+        	
+     	</div>   
+     	<div class="object-orange", id="Mumbai">
+        	<div class="footer">7000</div>
+	    	
+        	<div class="header">Mumbai</div>
+     	</div>
+    </div>
+    <div class="row5">
+    	<div class="object-blue", id="Shimla">
+        	<div class="footer">3500</div>
+        	
+            <div class="header">Shimla</div>
+        	
+     	</div>   
+     	<div class="object-brown", id="Seaways">
+        	<div class="footer">5500</div>
+	    	
+        	<div class="header">Seaways</div>
+     	</div>
+    </div>
+    <div class="row6">
+    	<div class="object-yellow", id="kanpur">
+        	<div class="footer">4000</div>
+        	
+            <div class="header">Bubaneshwar</div>
+        	
+     	</div>   
+     	<div class="object-red", id="Shillong">
+        	<div class="footer">3000</div>
+	    	
+        	<div class="header">Shillong</div>
+     	</div>
+    </div>
+    <div class="row7">
+    	<div class="object-brown", id="chance">
+        	<div class="footer"></div>
+        	
+            <div class="header">Chance</div>
+        	
+     	</div>   
+     	<div class="object-green", id="Delhi">
+        	<div class="footer">8000</div>
+	    	
+        	<div class="header">Delhi</div>
+     	</div>
+    </div>
+    <div class="row8">
+    	<div class="object-orange", id="Guwahati">
+        	<div class="footer">3000</div>
+        	
+            <div class="header">Guwahati</div>
+        	
+     	</div>   
+     	<div class="object-brown", id="bangalore">
+        	<div class="footer"></div>
+	    	
+        	<div class="header">Challenge</div>
+     	</div>
+    </div></div>
+    <div class="row9">
+    	<div class="fourcorners">
+    			Court
+    	</div>
+		<div class="object-blue", id="Chennai">
+        	<div class="footer">6500</div>
+        	
+            <div class="header">Chennai</div>
+        	
+     	</div>   
+     	<div class="object-green", id="Chandigarh">
+        	<div class="footer">3500</div>
+	    	
+        	<div class="header">Chandigarh</div>
+     	</div>
+        <div class="object-brown", id="Chance">
+    		<div class="footer"></div>
+        	
+        	<div class="header">Challenge</div>
+     	</div>
+     	<div class="object-yellow", id="Indore">
+	    	<div class="footer">5000</div>
+	        
+            <div class="header">Indore</div>
+	        
+	     </div>
+		 <div class="object-orange", id="Kochi">
+    		<div class="footer">4000</div>
+        	
+            <div class="header">Kochi</div>
+        	
+     	</div>
+     	<div class="object-red", id="Kolkata">
+	    	<div class="footer">6000</div>
+	        
+            <div class="header">Kolkata</div>
+     	</div>
+     	<div class="object-brown", id="Railways">
+    		<div class="footer">6000</div>
+        	
+        	<div class="header">Railways</div>
+     	</div>
+        
+        
+     	<div class="fourcorners">
+    		Start
+    	</div>
+     </div>
+    
+     	
+</body>
+</html>
